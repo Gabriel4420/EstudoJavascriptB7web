@@ -1,0 +1,78 @@
+#exemplo{
+    width:90%;
+    height: 200px;
+    margin: 20px;
+    border:1px solid #aaa;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    background-color:grey;
+    font-size:40px;
+    font-weight: bold;
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+}
+
+.buttons{
+    display:flex;
+    flex-direction:row;
+    align-items:stretch;
+    justify-content: space-between;
+    width:90.8%;
+    margin-left:20px;
+   
+}
+
+.buttons button{
+    outline:0;
+    border:none;
+    cursor:pointer;
+}
+
+.buttons button:nth-child(1),
+.buttons button:nth-child(2),
+.buttons button:nth-child(3){
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+}
+
+
+.buttons button:nth-child(1){
+    background-color:green;
+    color:white;
+    padding:15px;
+}
+
+
+
+.buttons button:nth-child(2){
+    background-color:red;
+    color:white;
+    padding:15px;
+}
+
+.buttons button:nth-child(3){
+    background-color:blue;
+    color:white;
+    padding:15px;
+}
+
+.verde , .vermelho, .azul{
+    padding:3px;
+   
+}
+
+.verde{
+    background-color:green !important;
+}
+
+.vermelho{
+    background-color:red !important;
+}
+
+.azul{
+    background-color:blue !important;
+}
