@@ -31,7 +31,7 @@ res = lista2;
 
 console.log(`Items maiores que 20 : ${res}`);
 
-//Função every ==> verifica em cada um dos items uma dada condição, todos
+//Função every ==> verifica em cada um dos items uma dada condição, aonde todos
 //os items devem estar de acordo com a condição para dar TRUE.
 
 lista2 = lista.every((item) =>{
