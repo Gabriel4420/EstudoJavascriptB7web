@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../src/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="https://img-premium.flaticon.com/png/512/3295/premium/3295500.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Requisições</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1 {
+            font-weight: bold;
+        }
+        
+        #posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            color: white;
+            background-image: radial-gradient(rgb(100, 6, 100), rgb(19, 67, 155));
+        }
+        
+        @media(max-width:290px) {
+            #posts {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        
+        @media(min-width:320px) and (max-width:460px) {
+            #posts {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        
+        @media(min-width:540px) and (max-width:1024px) {
+            #posts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media(min-width:2560px) {
+            #posts {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        #posts h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #posts p {
+            font-size: 15px;
+            padding: 10px;
+            text-align: justify;
+        }
+        
+        .request {
+            border: none;
+            background-image: radial-gradient(rgb(100, 6, 100), rgb(19, 67, 155));
+            padding: 14px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="request" onclick="loadPosts()">Carregar Posts</button>
+
+    <div id="posts">
+
+        <hr>
+
+    </div>
+
+    <div class="allPosts"></div>
+
+    <script src="../../../src/javascript/advanced/requests/index.js"></script>
+</body>
+
+</html>
