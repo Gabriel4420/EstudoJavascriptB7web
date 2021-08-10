@@ -6,6 +6,7 @@ const loadPosts = () => {
         })
         .then((json) => {
             montarBlog(json)
+            document.querySelector('body').style.backgroundImage = 'radial-gradient(rgb(100, 6, 100), rgb(19, 67, 155))';
             document.querySelector('.allPosts').innerHTML = json.length;
 
         })

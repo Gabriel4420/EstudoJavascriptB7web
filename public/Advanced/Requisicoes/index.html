@@ -38,7 +38,13 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             color: white;
-            background-image: radial-gradient(rgb(100, 6, 100), rgb(19, 67, 155));
+        }
+        
+        #posts :nth-child(odd) {
+            background-color: rgb(100, 6, 100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         @media(max-width:290px) {
@@ -71,15 +77,25 @@
         }
         
         #posts p {
-            font-size: 15px;
+            font-size: 20px;
             padding: 10px;
             text-align: justify;
         }
         
         .request {
             border: none;
-            background-image: radial-gradient(rgb(100, 6, 100), rgb(19, 67, 155));
             padding: 14px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            background-image: radial-gradient(rgb(100, 6, 100), rgb(19, 67, 155));
+        }
+        
+        .allPosts {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
             color: white;
         }
     </style>
