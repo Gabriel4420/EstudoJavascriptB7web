@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../src/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="https://img-premium.flaticon.com/png/512/3295/premium/3295500.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Fetch com post</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 20px;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: rgb(19, 67, 155);
+        }
+        
+         ::-webkit-scrollbar-track {
+            background-color: rgb(100, 6, 100);
+        }
+        
+        h1 {
+            font-weight: bold;
+        }
+        
+        #posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            color: white;
+        }
+        
+        #posts :nth-child(odd) {
+            background-color: rgb(51, 3, 51);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media(max-width:290px) {
+            #posts {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        
+        @media(min-width:320px) and (max-width:460px) {
+            #posts {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        
+        @media(min-width:540px) and (max-width:1024px) {
+            #posts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media(min-width:2560px) {
+            #posts {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        #posts h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #posts p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+        }
+        
+        .request {
+            border: none;
+            padding: 14px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            background-image: radial-gradient(rgb(100, 6, 100), rgb(19, 67, 155));
+        }
+        
+        .allPosts {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="request" onclick="addPosts()">Inserir Posts</button>
+
+    <div id="posts">
+
+        <hr>
+
+    </div>
+
+    <div class="allPosts"></div>
+
+    <script src="../../../src/javascript/advanced/requests/fetchPost.js"></script>
+</body>
+
+</html>
+
+</html>
